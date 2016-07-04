@@ -16,7 +16,7 @@ var uglify = require('gulp-uglify')
 // Variables
 //
 var srcDir = './lib';
-var distDir = './build';
+var distDir = './demo/build';//'./build';
 var isDebug = !gutil.env.prod;
 
 //
@@ -82,6 +82,8 @@ gulp.task('scripts', function () {
     srcDir + '/js/plugins/darkroom.rotate.js',
     srcDir + '/js/plugins/darkroom.crop.js',
     srcDir + '/js/plugins/darkroom.save.js',
+    srcDir + '/js/plugins/darkroom.text.js',
+    srcDir + '/js/plugins/darkroom.paint.js'
   ];
 
   gulp.src(files)
